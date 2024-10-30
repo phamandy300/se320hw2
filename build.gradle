@@ -1,0 +1,98 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Guava for contracts
+    implementation 'com.google.guava:guava:32.1.2-jre'
+
+    // jqwik for property-based testing
+    testImplementation "net.jqwik:jqwik:1.8.0"
+
+    // Hamcrest matchers
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    
+    // JUnit for tests
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.10.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.10.0"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+}
+
+test {
+    useJUnitPlatform {
+        includeEngines 'jqwik', 'junit-jupiter'
+    }
+    testLogging {
+        events "passed", "skipped", "failed"
+	exceptionFormat "short"
+    }
+    reports {
+        junitXml.outputLocation = layout.buildDirectory.dir("test-junit-xml")
+    }
+}
+compileTestJava {
+	options.compilerArgs += '-parameters'
+	options.encoding = 'UTF-8'
+}
+
+jacoco {
+    toolVersion = "0.8.12"
+}
+// This task only makes sense if 'test' has already run, i.e., "gradle test jacocoTestReport"
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        xml.outputLocation = file("${buildDir}/reports/jacoco-coverage.xml")
+        csv.required = true
+        html.required = true
+        html.outputLocation = file("${buildDir}/reports/coverage")
+    }
+}
+
+tasks.withType(Test) {
+    // Enable assertions (-ea) for tests
+    enableAssertions = true
+}
+
+// This task only runs if 'test' has already run, i.e., "gradle test jacocoTestCoverageVerification"
+//jacocoTestCoverageVerification {
+//    violationRules {
+//        rule {
+//            limit {
+//                minimum = 0.99
+//            }
+//        }
+//
+//        rule {
+//            enabled = true
+//            element = 'CLASS'
+//            includes = ['edu.drexel.se320.*']
+//
+//            limit {
+//                counter = 'LINE'
+//                value = 'TOTALCOUNT'
+//                maximum = 0.3
+//            }
+//        }
+//    }
+//}
+
+task zipSource(type: Zip) {
+    from layout.projectDirectory
+    exclude 'build/**'
+    exclude 'bin/**'
+    exclude '.gradle/**'
+    exclude '.settings/**'
+    exclude '**/*.swp'
+    exclude '.classpath'
+    exclude '.jqwik-database'
+    exclude '**/HookedTests.java'
+    destinationDirectory.set(layout.buildDirectory)
+    archiveFileName.set('se320-homework2.zip')
+}
