@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.639s</div>
+<div class="counter">0.736s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,62 +79,62 @@
 </thead>
 <tr>
 <td class="success">checkSingleArrayElt</td>
-<td class="success">0.029s</td>
+<td class="success">0.021s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findDuplicateElements</td>
-<td class="success">0.025s</td>
+<td class="success">0.027s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findElementInRandomSortedArray</td>
-<td class="success">0.026s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findFirstElement</td>
-<td class="success">0.063s</td>
+<td class="success">0.075s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findIntermediateElements</td>
-<td class="success">0.032s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findLastElement</td>
-<td class="success">0.035s</td>
+<td class="success">0.030s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findWithUnsortedArray</td>
-<td class="success">0.188s</td>
+<td class="success">0.069s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">throwsForElementAboveUpperBound</td>
-<td class="success">0.031s</td>
+<td class="success">0.035s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">throwsForElementBelowLowerBound</td>
-<td class="success">0.032s</td>
+<td class="success">0.041s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">throwsForEmptyArray</td>
-<td class="success">0.001s</td>
+<td class="success">0.029s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">throwsForNullArray</td>
-<td class="success">0.144s</td>
+<td class="success">0.307s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">throwsForNullElement</td>
-<td class="success">0.033s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -142,20 +142,7 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>timestamp = 2024-10-31T14:41:53.589652700, PropertyTests:findWithUnsortedArray = 
-                              |-----------------------jqwik-----------------------
-tries = 1000                  | # of calls to property
-checks = 1000                 | # of not rejected calls
-generation = RANDOMIZED       | parameters are randomly generated
-after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
-when-fixed-seed = ALLOW       | fixing the random seed is allowed
-edge-cases#mode = MIXIN       | edge cases are mixed in
-edge-cases#total = 5          | # of all combined edge cases
-edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 7035685010852943751    | random seed to reproduce generated values
-
-
-timestamp = 2024-10-31T14:41:53.624652700, PropertyTests:checkSingleArrayElt = 
+<pre>timestamp = 2024-10-31T15:29:12.374136200, PropertyTests:throwsForNullArray = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -165,10 +152,10 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 9          | # of all combined edge cases
 edge-cases#tried = 9          | # of edge cases tried in current run
-seed = 5021763185472576535    | random seed to reproduce generated values
+seed = 3067494798144658369    | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.688652800, PropertyTests:findFirstElement = 
+timestamp = 2024-10-31T15:29:12.454137500, PropertyTests:findWithUnsortedArray = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -178,10 +165,23 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 3767182227773456586    | random seed to reproduce generated values
+seed = -3689878884431449043   | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.714652900, PropertyTests:findElementInRandomSortedArray = 
+timestamp = 2024-10-31T15:29:12.476136600, PropertyTests:checkSingleArrayElt = 
+                              |-----------------------jqwik-----------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 9          | # of all combined edge cases
+edge-cases#tried = 9          | # of edge cases tried in current run
+seed = 4832954508932354558    | random seed to reproduce generated values
+
+
+timestamp = 2024-10-31T15:29:12.551136400, PropertyTests:findFirstElement = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -191,10 +191,10 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 6163987120739867733    | random seed to reproduce generated values
+seed = -1073911148610155134   | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.747654600, PropertyTests:throwsForElementBelowLowerBound = 
+timestamp = 2024-10-31T15:29:12.586137300, PropertyTests:findElementInRandomSortedArray = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -204,10 +204,23 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 7615750070869057411    | random seed to reproduce generated values
+seed = 6777441396078320372    | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.781653800, PropertyTests:findIntermediateElements = 
+timestamp = 2024-10-31T15:29:12.628136700, PropertyTests:throwsForElementBelowLowerBound = 
+                              |-----------------------jqwik-----------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 20         | # of all combined edge cases
+edge-cases#tried = 20         | # of edge cases tried in current run
+seed = 8130494727974325594    | random seed to reproduce generated values
+
+
+timestamp = 2024-10-31T15:29:12.661137, PropertyTests:findIntermediateElements = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -217,10 +230,10 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = -2280956605112544992   | random seed to reproduce generated values
+seed = 4975365195608647801    | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.806654300, PropertyTests:findDuplicateElements = 
+timestamp = 2024-10-31T15:29:12.691136500, PropertyTests:findDuplicateElements = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -230,10 +243,23 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 8448738674767481334    | random seed to reproduce generated values
+seed = -1872889116178258677   | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.843652900, PropertyTests:throwsForNullElement = 
+timestamp = 2024-10-31T15:29:12.721137100, PropertyTests:throwsForEmptyArray = 
+                              |-----------------------jqwik-----------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 9          | # of all combined edge cases
+edge-cases#tried = 9          | # of edge cases tried in current run
+seed = -9114385881137443009   | random seed to reproduce generated values
+
+
+timestamp = 2024-10-31T15:29:12.755135900, PropertyTests:throwsForNullElement = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -243,10 +269,10 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 5544459957943145684    | random seed to reproduce generated values
+seed = -1629412029475725404   | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.879652900, PropertyTests:findLastElement = 
+timestamp = 2024-10-31T15:29:12.786136600, PropertyTests:findLastElement = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -256,10 +282,10 @@ when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
 edge-cases#total = 5          | # of all combined edge cases
 edge-cases#tried = 5          | # of edge cases tried in current run
-seed = 5147627985247266492    | random seed to reproduce generated values
+seed = -9209432565072605618   | random seed to reproduce generated values
 
 
-timestamp = 2024-10-31T14:41:53.911653300, PropertyTests:throwsForElementAboveUpperBound = 
+timestamp = 2024-10-31T15:29:12.821138300, PropertyTests:throwsForElementAboveUpperBound = 
                               |-----------------------jqwik-----------------------
 tries = 1000                  | # of calls to property
 checks = 1000                 | # of not rejected calls
@@ -267,9 +293,9 @@ generation = RANDOMIZED       | parameters are randomly generated
 after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
 when-fixed-seed = ALLOW       | fixing the random seed is allowed
 edge-cases#mode = MIXIN       | edge cases are mixed in
-edge-cases#total = 5          | # of all combined edge cases
-edge-cases#tried = 5          | # of edge cases tried in current run
-seed = -1411823684071139394   | random seed to reproduce generated values
+edge-cases#total = 20         | # of all combined edge cases
+edge-cases#tried = 20         | # of edge cases tried in current run
+seed = -5022420058934162788   | random seed to reproduce generated values
 
 
 </pre>
@@ -283,7 +309,7 @@ seed = -1411823684071139394   | random seed to reproduce generated values
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 2:41:54 PM</p>
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 31, 2024, 3:29:13 PM</p>
 </div>
 </div>
 </body>

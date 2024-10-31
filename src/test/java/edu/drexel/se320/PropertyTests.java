@@ -57,25 +57,35 @@ public class PropertyTests extends BinarySearchBase {
         return Objects.equals(arr[find(arr, element)], element);
     }
 
-    @Property
-    public void throwsForElementBelowLowerBound(@ForAll("randomSortedArr") Integer[] arr) {
-        assertThrows(NoSuchElementException.class, () -> find(arr, -1));
+    @Provide
+    Arbitrary<Integer> upperBoundValues() {
+        return Arbitraries.integers().greaterOrEqual(101);  // For values > 100
+    }
+
+    @Provide
+    Arbitrary<Integer> lowerBoundValues() {
+        return Arbitraries.integers().lessOrEqual(-1);  // For values < 0
     }
 
     @Property
-    public void throwsForElementAboveUpperBound(@ForAll("randomSortedArr") Integer[] arr) {
-        assertThrows(NoSuchElementException.class, () -> find(arr, 101));
+    public void throwsForElementBelowLowerBound(@ForAll("randomSortedArr") Integer[] arr, @ForAll("lowerBoundValues") Integer element) {
+        assertThrows(NoSuchElementException.class, () -> find(arr, element));
+    }
+
+    @Property
+    public void throwsForElementAboveUpperBound(@ForAll("randomSortedArr") Integer[] arr, @ForAll("upperBoundValues") Integer element) {
+        assertThrows(NoSuchElementException.class, () -> find(arr, element));
     }
     
-    @Example
-    public void throwsForEmptyArray() {
+    @Property
+    public void throwsForEmptyArray(@ForAll int elem) {
         Integer[] arr = {};
-        assertThrows(IllegalArgumentException.class, () -> find(arr, 0));
+        assertThrows(IllegalArgumentException.class, () -> find(arr, elem));
     }
 
-    @Example
-    public void throwsForNullArray() {
-        assertThrows(IllegalArgumentException.class, () -> find(null, 0));
+    @Property
+    public void throwsForNullArray(@ForAll int elem) {
+        assertThrows(IllegalArgumentException.class, () -> find(null, elem));
     }
 
     @Property
