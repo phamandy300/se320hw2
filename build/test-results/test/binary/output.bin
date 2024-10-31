@@ -1,0 +1,13 @@
+[timestamp = 2024-10-30T23:44:35.911440, PropertyTests:checkElementNotInArrayUpperBound = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = -8386351893496986862   | random seed to reproduce generated values
+
+
