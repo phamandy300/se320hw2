@@ -1,13 +1,130 @@
-[timestamp = 2024-10-30T23:44:35.911440, PropertyTests:checkElementNotInArrayUpperBound = 
-T                              |-----------------------jqwik-----------------------
-8tries = 1000                  | # of calls to property
-9checks = 1000                 | # of not rejected calls
-Cgeneration = RANDOMIZED       | parameters are randomly generated
-Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
-Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
-9edge-cases#mode = MIXIN       | edge cases are mixed in
->edge-cases#total = 5          | # of all combined edge cases
-Fedge-cases#tried = 5          | # of edge cases tried in current run
-Kseed = -8386351893496986862   | random seed to reproduce generated values
-
-
+Stimestamp = 2024-10-31T14:41:53.589652700, PropertyTests:findWithUnsortedArray = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = 7035685010852943751    | random seed to reproduce generated values
+
+
+Qtimestamp = 2024-10-31T14:41:53.624652700, PropertyTests:checkSingleArrayElt = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 9          | # of all combined edge cases
+Fedge-cases#tried = 9          | # of edge cases tried in current run
+Kseed = 5021763185472576535    | random seed to reproduce generated values
+
+
+Ntimestamp = 2024-10-31T14:41:53.688652800, PropertyTests:findFirstElement = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = 3767182227773456586    | random seed to reproduce generated values
+
+
+\timestamp = 2024-10-31T14:41:53.714652900, PropertyTests:findElementInRandomSortedArray = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = 6163987120739867733    | random seed to reproduce generated values
+
+
+]timestamp = 2024-10-31T14:41:53.747654600, PropertyTests:throwsForElementBelowLowerBound = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = 7615750070869057411    | random seed to reproduce generated values
+
+
+Vtimestamp = 2024-10-31T14:41:53.781653800, PropertyTests:findIntermediateElements = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = -2280956605112544992   | random seed to reproduce generated values
+
+
+	Stimestamp = 2024-10-31T14:41:53.806654300, PropertyTests:findDuplicateElements = 
+	T                              |-----------------------jqwik-----------------------
+	8tries = 1000                  | # of calls to property
+	9checks = 1000                 | # of not rejected calls
+	Cgeneration = RANDOMIZED       | parameters are randomly generated
+	Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+	Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+	9edge-cases#mode = MIXIN       | edge cases are mixed in
+	>edge-cases#total = 5          | # of all combined edge cases
+	Fedge-cases#tried = 5          | # of edge cases tried in current run
+	Kseed = 8448738674767481334    | random seed to reproduce generated values
+	
+	
+Rtimestamp = 2024-10-31T14:41:53.843652900, PropertyTests:throwsForNullElement = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = 5544459957943145684    | random seed to reproduce generated values
+
+
+Mtimestamp = 2024-10-31T14:41:53.879652900, PropertyTests:findLastElement = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = 5147627985247266492    | random seed to reproduce generated values
+
+
+]timestamp = 2024-10-31T14:41:53.911653300, PropertyTests:throwsForElementAboveUpperBound = 
+T                              |-----------------------jqwik-----------------------
+8tries = 1000                  | # of calls to property
+9checks = 1000                 | # of not rejected calls
+Cgeneration = RANDOMIZED       | parameters are randomly generated
+Rafter-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+Cwhen-fixed-seed = ALLOW       | fixing the random seed is allowed
+9edge-cases#mode = MIXIN       | edge cases are mixed in
+>edge-cases#total = 5          | # of all combined edge cases
+Fedge-cases#tried = 5          | # of edge cases tried in current run
+Kseed = -1411823684071139394   | random seed to reproduce generated values
+
+
